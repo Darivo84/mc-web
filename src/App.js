@@ -12,7 +12,7 @@ import Services from './pages/Services';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
